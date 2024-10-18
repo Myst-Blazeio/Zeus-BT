@@ -1,72 +1,79 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f4f8;
   margin: 0;
-  padding: 0;
-  background: #f4f4f4;
 }
 
-header {
-  background: #333;
-  color: #fff;
-  padding: 1rem;
+.login-container {
+  background: #f9f9f9;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 350px;
+}
+
+.login-container h1 {
   text-align: center;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 500;
 }
 
-nav a {
-  color: #fff;
-  margin: 0 15px;
-  text-decoration: none;
-}
-
-main {
-  padding: 20px;
-  background: #fff;
-  margin: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+.login-container h2 {
+  margin-bottom: 20px;
+  font-weight: 500;
+  text-align: center;
   color: #333;
 }
 
-footer {
-  background: #333;
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background: #fafafa;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.input-group span.material-icons {
+  color: #1e88e5;
+  margin-right: 10px;
+}
+
+.input-group select,
+.input-group input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+}
+
+.login-container input[type="submit"] {
+  background-color: #1e88e5;
   color: #fff;
-  text-align: center;
-  padding: 1rem;
-  position: fixed;
-  bottom: 0;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
   width: 100%;
 }
 
-button {
-  background: #28a745;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
+.login-container input[type="submit"]:hover {
+  background-color: #1565c0;
 }
 
-button:hover {
-  background: #218838;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form label,
-form input,
-form textarea {
-  margin-bottom: 10px;
-}
-
-form input,
-form textarea {
-  padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ddd;
+.input-group select:focus,
+.input-group input:focus {
+  border-color: #1e88e5;
+  outline: none;
 }
