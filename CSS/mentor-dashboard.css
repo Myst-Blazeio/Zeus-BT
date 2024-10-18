@@ -75,7 +75,7 @@ body {
 
 .statistic {
     text-align: center;
-    background-color: #f0f4f8; /* Set background color */
+    background-color: white; /* Set background color */
     padding: 15px; /* Ensure consistent padding */
     border-radius: 8px;
     transition: background-color 0.3s ease;
@@ -156,7 +156,7 @@ body {
 .student-management, .schedule, .resources, .notifications {
     margin-top: 30px;
     padding: 15px;
-    background-color: #f0f4f8; /* Set background color */
+    background-color: white; /* Set background color */
     border: 1px solid #ddd;
     border-radius: 8px;
 }
@@ -218,4 +218,96 @@ li:hover {
     color: #d32f2f;
     /* Darker red on hover */
 }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.close-button {
+    cursor: pointer;
+    font-size: 24px;
+    color: #aaa;
+    float: right;
+}
+
+.close-button:hover {
+    color: #000;
+}
+
+.hidden {
+    display: none;
+}
+
+.message-list {
+    max-height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.message-item {
+    background-color: #d3e6ed;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+.message-form {
+    display: flex;
+    /* justify-content:center */
+    /* align-items: center;  */
+    margin-bottom: 20px;
+}
+
+.message-form select {
+    margin-right: 10px; /* Space between dropdown and input */
+    padding: 10px; /* Padding for the dropdown */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 4px; /* Rounded corners */
+    height: 40px; /* Set height to match input and button */
+}
+
+.message-form input {
+    flex: 1; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.message-form button {
+    padding: 10px 15px; 
+    background-color: #1e3a8a; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    height: 100%; 
+    display: flex; 
+    align-items: center; 
+}
+
+.message-form button:hover {
+    background-color: #3b82f6; 
+}
+
 
