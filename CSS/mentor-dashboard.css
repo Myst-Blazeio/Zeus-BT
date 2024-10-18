@@ -229,3 +229,6 @@ li:hover {
     margin-right: 5px;
     /* Space between icon and text */
 }
+.edit-btn {
+    color: #ff0000;
+}

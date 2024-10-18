@@ -43,7 +43,7 @@ function viewProfile() {
                                     <li>AI in Education - Funded by XYZ Foundation</li>
                                     <li>Blockchain for Secure Transactions - Collaborated with ABC University</li>
                                 </ul>
-                                <button class="edit-btn" title="Edit">
+                                <button class="edit-btn">
         <i class="material-icons">edit</i>
     </button>
                             </div>
