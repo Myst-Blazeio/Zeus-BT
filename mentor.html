@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/mentor.css">
+    <script src="./JS/mentor.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Mentor Dashboard</h2>
+            <ul>
+                <li onclick="showSection('profile')">Profile</li>
+                <li onclick="showSection('mentees')">Mentees</li>
+                <li onclick="showSection('schedule')">Schedule</li>
+                <li onclick="showSection('messages')">Messages</li>
+                <li onclick="showSection('resources')">Resources</li>
+            </ul>
+        </aside>
+
+        <main class="content">
+            <section id="profile" class="section">
+                <h3>Profile</h3>
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/150" alt="Mentor Profile" class="profile-pic">
+                    <div class="profile-info">
+                        <h4>John Doe</h4>
+                        <p>Department: Computer Science</p>
+                        <p>Email: johndoe@example.com</p>
+                        <p>Phone: +1234567890</p>
+                        <p>Bio: Experienced mentor in AI and web development.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="mentees" class="section hidden">
+                <h3>Mentees</h3>
+                <div class="mentee-list">
+                    <div class="mentee-card">
+                        <h4>Jane Smith</h4>
+                        <p>Course: B.Tech, 3rd Year</p>
+                        <p>Status: Active</p>
+                        <button onclick="sendMessage('Jane Smith')">Message</button>
+                    </div>
+                    <!-- Add more mentee cards as needed -->
+                </div>
+            </section>
+
+            <section id="schedule" class="section hidden">
+                <h3>Schedule</h3>
+                <div class="schedule-list">
+                    <div class="schedule-card">
+                        <div class="schedule-header">
+                            <h4>Session with Jane Smith</h4>
+                            <span class="schedule-status">Upcoming</span>
+                        </div>
+                        <p class="schedule-date">Date: <strong>20th October</strong></p>
+                        <p class="schedule-time">Time: <strong>10:00 AM</strong></p>
+                        <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link">
+                            <span class="material-icons">videocam</span> Join Google Meet
+                        </a>
+                    </div>
+                    <div class="schedule-card">
+                        <div class="schedule-header">
+                            <h4>Session with John Doe</h4>
+                            <span class="schedule-status">Upcoming</span>
+                        </div>
+                        <p class="schedule-date">Date: <strong>22nd October</strong></p>
+                        <p class="schedule-time">Time: <strong>2:00 PM</strong></p>
+                        <a href="https://meet.google.com/xyz-uvw-rst" target="_blank" class="meet-link">
+                            <span class="material-icons">videocam</span> Join Google Meet
+                        </a>
+                    </div>
+                    <!-- Add more schedule cards as needed -->
+                </div>
+            </section>
+
+            <section id="messages" class="section hidden">
+                <h3>Messages</h3>
+                <div class="messages-container">
+                    <div class="message-list" id="messageList">
+                        <!-- Messages will appear here dynamically -->
+                    </div>
+                    <div class="message-input">
+                        <input type="text" id="messageInput" placeholder="Type a message...">
+                        <button onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="resources" class="section hidden">
+                <h3>Resources</h3>
+                <div class="resource-list">
+                    <p>Resource 1: <a href="#">Introduction to JavaScript</a></p>
+                    <p>Resource 2: <a href="#">Advanced CSS Techniques</a></p>
+                    <!-- Add more resources as needed -->
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>

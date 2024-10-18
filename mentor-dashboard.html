@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./CSS/mentor-dashboard.css">
     <link rel="stylesheet" href="./CSS/profile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
 </head>
 <body>
     <div class="dashboard">
@@ -27,7 +28,7 @@
                     <i class="material-icons white">edit</i>
                     Edit Profile
                 </button>
-                <button class="custom-button" onclick="window.location.href='message.html'">
+                <button class="custom-button" onclick="openMessageModal()">
                     <span class="material-icons white">send</span>
                     Message
                 </button>
@@ -39,7 +40,7 @@
 
             <div class="statistics">
                 <div class="statistic" data-category="minutesMentored">
-                    <h2>33</h2>
+                    <h2>1833</h2>
                     <p><span class="material-icons">access_time</span> Minutes mentored</p>
                 </div>
                 <div class="statistic" data-category="oneToOneBookings">
@@ -95,7 +96,10 @@
 
             <div class="resources">
                 <h2><span class="material-icons">folder</span> Resource Sharing</h2>
-                <button class="custom-button">Upload Resource</button>
+                <button class="custom-button" id="uploadResourceButton">
+                    <input type="file" id="fileInput" style="display: none;" />
+                    Upload Resource
+                </button>
                 <ul id="resource-list">
                     <li><span class="material-icons">description</span> Resource 1</li>
                     <li><span class="material-icons">description</span> Resource 2</li>
@@ -116,6 +120,27 @@
 
 <!-- Profile Section (will be populated dynamically) -->
 <div id="profileSection" class="profile-section hidden"></div>
+<div id="messageModal" class="modal hidden">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeMessageModal()">&times;</span>
+        <h1>Notice Page</h1>
+        <div class="message-form">
+            <select id="studentSelect">
+                <option value="">Select option</option>
+                <option value="Student 1">Student 1</option>
+                <option value="Student 2">Student 2</option>
+                <option value="Student 3">Student 3</option>
+                <option value="Global Notice">Global Notice</option>
+            </select>
+            <input type="text" id="messageInput" placeholder="Type your message here..." />
+            <button id="sendButton">Send</button>
+        </div>
+        
+        <div class="message-list" id="messageList">
+            <!-- Messages will appear here -->
+        </div>
+    </div>
+</div>
     <script src="./JS/mentor-dashboard.js"></script>
     <script src="./JS/profile.js"></script>
 </body>

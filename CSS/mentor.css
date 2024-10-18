@@ -1,0 +1,185 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  width: 250px;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  margin: 5px 0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.sidebar li:hover {
+  background-color: #3b82f6;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.section {
+  display: none;
+}
+
+.section.active {
+  display: block;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.mentee-card,
+.schedule-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.message-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message-input input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+}
+
+.message-input button {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.message-list {
+  border: 1px solid #e5e7eb;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  background-color: #ffffff;
+}
+
+.message-list .message {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  width: fit-content;
+}
+
+.message-list .message.sent {
+  background-color: #1e3a8a;
+  align-self: flex-end;
+}
+
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Space between cards */
+}
+
+.schedule-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.schedule-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.schedule-status {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.schedule-date,
+.schedule-time {
+  margin: 5px 0;
+}
+
+.meet-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: bold;
+  margin-top: 10px;
+  background-color: #e5e7eb;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 20%;
+}
+
+.meet-link:hover {
+  background-color: #3b82f6;
+  color: #ffffff;
+}
+
+.meet-link .material-icons {
+  margin-right: 5px;
+}
