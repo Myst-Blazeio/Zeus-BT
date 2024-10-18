@@ -168,6 +168,15 @@ h1 {
 .notification span.material-icons {
   color: #1e88e5;
   margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.notification span.material-icons:hover {
+  color: #1565c0;
+}
+
+.notification span.material-icons:active {
+  color: #0d47a1;
 }
 
 .notification p {
@@ -270,6 +279,11 @@ h1 {
   font-size: 14px;
 }
 
+.not-available{
+  color: grey;
+}
+
+
 .book-slot {
   background-color: #1a73e8;
   color: white;
@@ -290,6 +304,17 @@ h1 {
 .book-slot:hover {
   background-color: #135cbc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.book-slot.disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.book-slot.disabled:hover {
+  background-color: grey;
+  box-shadow: none;
 }
 
 /* Responsive Styling */

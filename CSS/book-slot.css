@@ -104,7 +104,6 @@ body {
 
 .timeslot.booked:hover {
     background-color: #ccc8c8;
-    border-color: red;
 }
 
 .success-message {
