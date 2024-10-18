@@ -8,7 +8,7 @@ body {
     margin: 0;
 }
 
-.profile-card {
+.profile-card2 {
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -20,7 +20,7 @@ body {
     border-top: 5px solid #1976d2;
 }
 
-.profile-card {
+.profile-card2 {
     background: #ffffff;
     padding: 20px;
     border-radius: 8px;
@@ -32,18 +32,18 @@ body {
     /* Ensure the card itself is centered */
 }
 
-.profile-picture,
-.input-group,
-.time-slots,
-.date-picker {
+.profile-picture2,
+.input-group2,
+.time-slots2,
+.date-picker2 {
     margin-bottom: 15px;
     text-align: left;
 }
 
-.input-group label,
-.time-slots label,
-.profile-picture label,
-.date-picker label {
+.input-group2 label,
+.time-slots2 label,
+.profile-picture2 label,
+.date-picker2 label {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -51,8 +51,8 @@ body {
     color: #0d47a1;
 }
 
-.input-group input,
-.date-picker input {
+.input-group2 input,
+.date-picker2 input {
     width: 100%;
     padding: 8px;
     border-radius: 4px;
@@ -61,8 +61,8 @@ body {
     transition: border-color 0.3s;
 }
 
-.input-group input:focus,
-.date-picker input:focus {
+.input-group2 input:focus,
+.date-picker2 input:focus {
     border-color: #1976d2;
     outline: none;
 }
@@ -73,7 +73,7 @@ body {
     gap: 10px;
 }
 
-.time-slot-btn {
+.time-slot-btn2 {
     border: 1px solid #64b5f6;
     padding: 5px 10px;
     border-radius: 4px;
@@ -83,18 +83,18 @@ body {
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.time-slot-btn.selected {
+.time-slot-btn2.selected2 {
     background-color: #e57373;
     color: #ffffff;
     border-color: #e57373;
 }
 
 
-.save-btn:hover {
+.save-btn2:hover {
     background-color: #1565c0;
 }
 
-.save-btn {
+.save-btn2 {
     background-color: #1976d2;
     color: #ffffff;
     padding: 10px 20px;

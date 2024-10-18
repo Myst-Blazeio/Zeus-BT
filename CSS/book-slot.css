@@ -1,0 +1,240 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.booking-form-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+}
+
+.go-back {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+#booking-form h2 {
+    margin-top: 0;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+#booking-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 500;
+}
+
+#booking-form input,
+#booking-form textarea {
+    width: 96%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+#booking-form button:not(.timeslot) {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+#booking-form button:not(.timeslot):hover {
+    background-color: #1565c0;
+}
+
+.timeslot-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.timeslot {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.timeslot.active {
+    background-color: #1e88e5;
+    color: white;
+    border-color: #1e88e5;
+}
+
+.timeslot.booked {
+    background-color: #e0e0e0;
+    color: #999;
+    border-color: #ddd;
+    cursor: not-allowed;
+    opacity: 0.65;
+}
+
+.timeslot.booked:hover {
+    background-color: #ccc8c8;
+}
+
+.success-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.success-message span.material-icons {
+    font-size: 48px;
+    color: green;
+}
+
+.success-message p {
+    margin: 10px 0 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Responsive Styling */
+
+/* Extra small devices (phones, portrait phones) */
+@media (max-width: 575px) {
+    .booking-form-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .go-back {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    #booking-form input,
+    #booking-form textarea {
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .timeslot-container {
+        justify-content: center;
+    }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .booking-form-container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .go-back {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    #booking-form input,
+    #booking-form textarea {
+        width: calc(100% - 10px);
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .timeslot-container {
+        justify-content: center;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .booking-form-container {
+        width: 100%;
+        padding: 18px;
+    }
+
+    #booking-form input,
+    #booking-form textarea {
+        width: calc(100% - 15px);
+        margin-left: 7.5px;
+        margin-right: 7.5px;
+    }
+
+    .timeslot-container {
+        justify-content: center;
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .booking-form-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #booking-form input,
+    #booking-form textarea {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .timeslot-container {
+        justify-content: center;
+    }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+    .booking-form-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #booking-form input,
+    #booking-form textarea {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .timeslot-container {
+        justify-content: center;
+    }
+}
