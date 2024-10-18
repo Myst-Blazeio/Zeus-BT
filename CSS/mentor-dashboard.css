@@ -44,16 +44,16 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
     width: 15%;
-  }
-  
-  .meet-link:hover {
+}
+
+.meet-link:hover {
     background-color: #3b82f6;
     color: #ffffff;
-  }
-  
-  .meet-link .material-icons {
+}
+
+.meet-link .material-icons {
     margin-right: 5px;
-  }
+}
 
 .quick-actions button {
     margin-bottom: 10px;
@@ -195,13 +195,14 @@ li:hover {
 .material-icons {
     vertical-align: middle; /* Align icons with text */
     margin-right: 5px; /* Space between icon and text */
-    color:#1e88e5
+    color: #1e88e5;
 }
 
-.white{
-    color:#f0f4f8
+.white {
+    color: #f0f4f8;
 }
-.red{
+
+.red {
     color: red;
 }
 
@@ -269,6 +270,7 @@ li:hover {
     padding: 10px;
     border-radius: 5px;
 }
+
 .message-form {
     display: flex;
     /* justify-content:center */
@@ -285,29 +287,192 @@ li:hover {
 }
 
 .message-form input {
-    flex: 1; 
-    padding: 10px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     margin-right: 10px;
     box-sizing: border-box;
 }
 
 .message-form button {
-    padding: 10px 15px; 
-    background-color: #1e3a8a; 
-    color: white; 
-    border: none; 
-    border-radius: 4px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-    height: 100%; 
-    display: flex; 
-    align-items: center; 
+    padding: 10px 15px;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .message-form button:hover {
-    background-color: #3b82f6; 
+    background-color: #3b82f6;
 }
 
+/* Responsive Styling */
 
+/* Extra small devices (phones, portrait phones) */
+@media (max-width: 575px) {
+    .dashboard {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-main {
+        padding: 10px;
+    }
+
+    .quick-actions {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .user-info img {
+        width: 80px;
+    }
+
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistic {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .dashboard {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-main {
+        padding: 15px;
+    }
+
+    .quick-actions {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .user-info img {
+        width: 90px;
+    }
+
+    .statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .statistic {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .dashboard {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-main {
+        padding: 20px;
+    }
+
+    .quick-actions {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .user-info img {
+        width: 100px;
+    }
+
+    .statistics {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .statistic {
+        min-width: 45%;
+        max-width: 45%;
+    }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .dashboard {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-main {
+        padding: 20px;
+    }
+
+    .quick-actions {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .user-info img {
+        width: 100px;
+    }
+
+    .statistics {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .statistic {
+        min-width: 30%;
+        max-width: 30%;
+    }
+}
+
+/* Extra large devices (large desktops) */
+@media (min-width: 1200px) {
+    .dashboard {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .dashboard-main {
+        padding: 20px;
+    }
+
+    .quick-actions {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .user-info img {
+        width: 100px;
+    }
+
+    .statistics {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    /* .statistic {
+        min-width: 25%;
+        max-width: 25%;
+    } */
+}
