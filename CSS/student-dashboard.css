@@ -413,6 +413,30 @@ h1 {
   }
 }
 
+.view-more-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  display: block;
+}
+
+.view-more-btn:hover {
+  background-color: #135cbc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
