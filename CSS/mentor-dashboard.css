@@ -195,4 +195,9 @@ li:hover {
 .material-icons {
     vertical-align: middle; /* Align icons with text */
     margin-right: 5px; /* Space between icon and text */
+    color:#1e88e5
+}
+
+.white{
+    color:#f0f4f8
 }
