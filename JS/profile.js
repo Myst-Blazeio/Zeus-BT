@@ -7,17 +7,17 @@ function viewProfile() {
                     <div class="profile-content">
                         <span class="close" onclick="closeProfile()">&times;</span>
                         <div class="profile-card">
-                            <img src="https://via.placeholder.com/100" alt="Profile Picture" class="profile-pic">
+                            <img src="assets/placeholder-image.jpeg" alt="Profile Picture" class="profile-pic">
                             <div class="profile-info">
-                                <h4>Dr. Alice Johnson</h4>
+                                <h4>Dr. Gurjinder Kaur</h4>
                                 <p class="designation">Associate Professor</p>
                                 <p class="department">Department of Computer Science</p>
                                 <br>
                                 <p class="contact">
-                                    <span class="material-icons">phone</span> +1 234 567 890
+                                    <span class="material-icons">phone</span> +91 1672-253326
                                 </p>
                                 <p class="email">
-                                    <span class="material-icons">email</span> alice.johnson@example.com
+                                    <span class="material-icons">email</span> gurjinder13@yahoo.com
                                 </p>
                                 <br>
                                 <h5>Educational Qualifications</h5>
