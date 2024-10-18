@@ -15,6 +15,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const password = document.getElementById('password').value;
     const mentorId = document.getElementById('mentor-id').value;
 
+    // Validation: check if role, email, and password are filled
     if (!role) {
         alert('Please select your role.');
         return;
@@ -25,18 +26,27 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         return;
     }
 
-    if (role === 'mentor' && !mentorId) {
-        alert('Please enter your Mentor ID.');
-        return;
+    // Check if the user is a mentor and if the Mentor ID is provided
+    if (role === 'mentor') {
+        if (!mentorId) {
+            alert('Please enter your Mentor ID.');
+            return;
+        } else {
+            // Mentor login successful, redirect to Mentor Dashboard
+            window.location.href = "mentor-dashboard.html";
+        }
+    } else {
+        // If the role is not mentor, you can redirect to a student dashboard or do other actions
+        alert(`Logged in as ${role}`);
+        // You can also add a redirect for student dashboard, e.g.:
+        // window.location.href = "student-dashboard.html";
     }
 
-    // Here you can add functionality for login authentication
+    // Log user details (for development/testing)
     console.log('Role:', role);
     console.log('Email:', email);
     console.log('Password:', password);
     if (role === 'mentor') {
         console.log('Mentor ID:', mentorId);
     }
-
-    alert(`Logged in as ${role}`);
 });
