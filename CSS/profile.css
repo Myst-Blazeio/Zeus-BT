@@ -134,3 +134,23 @@ body {
 .edit-btn i {
   font-size: 24px; /* Adjust the size of the icon */
 }
+
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#aac0ec; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #f0f0f0; /* Space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aac0ec; /* Color when hovering */
+}

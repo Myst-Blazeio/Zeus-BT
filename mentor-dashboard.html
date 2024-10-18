@@ -21,12 +21,11 @@
             <div class="quick-actions">
                 <button onclick="viewProfile()" class="custom-button">
                     <span class="material-icons">person</span>
-                    View my profile
+                    View Profile
                 </button>
-
-                <button class="custom-button">
-                    <span class="material-icons white">add_box</span>
-                    Create a session
+                <button class="custom-button" >
+                    <i class="material-icons">edit</i>
+                    Edit Profile
                 </button>
                 <button class="custom-button" onclick="window.location.href='message.html'">
                     <span class="material-icons white">send</span>
@@ -70,13 +69,27 @@
             <div class="schedule" id="schedule">
                 <h2><span class="material-icons">schedule</span> Upcoming Sessions</h2>
                 <ul id="session-list">
-                    <li><span class="material-icons">event</span> Session with Student 1 - Oct 20, 2024, 10:00 AM <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link">
+                    <li>
+                        <span class="material-icons">event</span> Session with Student 1 - Oct 20, 2024, 10:00 AM 
+                        <div class="gmeet" style="display: flex;">
+                        <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link">
                         <span class="material-icons">videocam</span> Join Google Meet
-                    </a></li>
-                    
-                    <li><span class="material-icons">event</span> Session with Student 2 - Oct 22, 2024, 2:00 PM <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link">
-                        <span class="material-icons">videocam</span> Join Google Meet
-                    </a></li>
+                        </a>
+                    <button class="cancel-btn">
+                        <span class="material-icons">close</span> 
+                    </button>
+                    </div>
+                    </li>
+                    <li><span class="material-icons">event</span> Session with Student 2 - Oct 22, 2024, 2:00 PM
+                        <div class="gmeet" style="display: flex;">
+                            <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link">
+                                <span class="material-icons">videocam</span> Join Google Meet
+                            </a>
+                            <button class="cancel-btn">
+                                <span class="material-icons">close</span>
+                            </button>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
