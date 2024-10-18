@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 20px;
+}
+
+.open-profile-btn {
+  background-color: #1e3a8a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.open-profile-btn .material-icons {
+  margin-right: 8px;
+}
+
+.open-profile-btn:hover {
+  background-color: #3b82f6;
+  transform: scale(1.05);
+}
+
+.modal {
+  display: flex;
+  justify-content: flex-end; /* Align modal to the right */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Hide overflow */
+  background-color: rgba(0, 0, 0, 0.7);
+  transform: translateX(100%); /* Initially off-screen to the right */
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+.modal.visible {
+  transform: translateX(0); /* Slide in from the right */
+}
+
+.modal-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px; /* Restrict maximum width */
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+  max-height: 90vh; /* Restrict maximum height */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: #1e3a8a;
+  cursor: pointer;
+}
+
+.profile-card {
+  display: flex;
+  align-items: flex-start; /* Align items to the start */
+}
+
+.profile-pic {
+  width: 100px; /* Adjusted for better fit */
+  height: 100px; /* Adjusted for better fit */
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 2px solid #3b82f6;
+}
+
+.profile-info {
+  flex: 1; /* Allow the profile info to take remaining space */
+}
+
+.profile-info h4 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 1.6em; /* Increased font size for the name */
+}
+
+.profile-info .designation,
+.profile-info .department {
+  font-weight: bold;
+  color: #4b5563; /* Darker gray for less emphasis */
+  font-size: 1.1em; /* Slightly larger font size */
+}
+
+.profile-info h5 {
+  margin: 10px 0 5px;
+  color: #1e3a8a;
+}
+
+.profile-info ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  font-size: 1em; /* Standard font size */
+}
+
+.profile-info .material-icons {
+  vertical-align: middle; /* Align icons with text */
+}
+
+.hidden {
+  display: none;
+}
