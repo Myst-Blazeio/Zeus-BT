@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.profile-card2 {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+    border-top: 5px solid #1976d2;
+}
+
+.profile-card2 {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    border-top: 5px solid #1976d2;
+    margin: 0 auto;
+    /* Ensure the card itself is centered */
+}
+
+.profile-picture2,
+.input-group2,
+.time-slots2,
+.date-picker2 {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group2 label,
+.time-slots2 label,
+.profile-picture2 label,
+.date-picker2 label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    color: #0d47a1;
+}
+
+.input-group2 input,
+.date-picker2 input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #90caf9;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-group2 input:focus,
+.date-picker2 input:focus {
+    border-color: #1976d2;
+    outline: none;
+}
+
+#timeSlotsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.time-slot-btn2 {
+    border: 1px solid #64b5f6;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #e3f2fd;
+    color: #1976d2;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.time-slot-btn2.selected2 {
+    background-color: #e57373;
+    color: #ffffff;
+    border-color: #e57373;
+}
+
+
+.save-btn2:hover {
+    background-color: #1565c0;
+}
+
+.save-btn2 {
+    background-color: #1976d2;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0 auto;
+    /* Center the button horizontally */
+}
