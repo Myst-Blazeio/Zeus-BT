@@ -1,0 +1,260 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e88e5;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #311b92;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-section h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.content-block.reverse {
+    flex-direction: row;
+}
+
+.content-block .text {
+    flex: 1;
+    padding: 20px;
+}
+
+.content-block img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.content-block img:hover {
+    transform: scale(1.05);
+}
+
+.about-section h2 {
+    color: #1e88e5;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-section p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-section ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+    color: #666;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.about-section ul li span.material-icons {
+    color: #1e88e5;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #1e88e5;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 575px) {
+    nav a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .about-section {
+        padding: 15px;
+    }
+
+    .about-section p, .about-section ul li {
+        font-size: 14px;
+    }
+
+    .content-block {
+        flex-direction: column;
+    }
+
+    .content-block.reverse {
+        flex-direction: column;
+    }
+
+    .content-block img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    nav a {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .about-section {
+        padding: 15px;
+    }
+
+    .about-section p, .about-section ul li {
+        font-size: 14px;
+    }
+
+    .content-block {
+        flex-direction: column;
+    }
+
+    .content-block.reverse {
+        flex-direction: column;
+    }
+
+    .content-block img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    nav a {
+        padding: 12px 18px;
+        font-size: 15px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .about-section {
+        padding: 18px;
+    }
+
+    .about-section p, .about-section ul li {
+        font-size: 15px;
+    }
+
+    .content-block img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    nav a {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section p, .about-section ul li {
+        font-size: 16px;
+    }
+
+    .content-block img {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1200px) {
+    nav a {
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .about-section {
+        padding: 20px;
+    }
+
+    .about-section p, .about-section ul li {
+        font-size: 16px;
+    }
+
+    .content-block img {
+        width: 40%;
+    }
+}

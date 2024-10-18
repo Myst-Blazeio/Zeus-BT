@@ -1,110 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Button with Google Material Icon</title>
+    <title>About Us | SLIET Mentorship Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-    <style>
-        .custom-button {
-            background-color: #1a73e8;
-            /* Updated button background color (Google blue) */
-            color: white;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 20px;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            /* Space between icon and text */
-            font-size: 16px;
-            /* Text size */
-            outline: none;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-
-            /* Google-like subtle box shadow */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .custom-button:hover {
-            background-color: #135cbc;
-            /* Darker shade of Google blue on hover */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            /* Slightly stronger shadow on hover */
-        }
-
-        .material-icons {
-            font-size: 24px;
-            /* Custom font size for the icon */
-            color: #ffffff;
-            /* Custom icon color */
-        }
-
-        .outlined-button {
-            background-color: transparent;
-            /* Transparent background */
-            color: #1a73e8;
-            /* Text and icon color set to Google blue */
-            border: 2px solid #1a73e8;
-            /* Border color (Google blue) */
-            border-radius: 8px;
-            padding: 10px 20px;
-            cursor: pointer;
-            display: inline-flex;
-            align-items: center;
-            /* Vertically center the icon and text */
-            justify-content: center;
-            /* Horizontally center the icon and text */
-            gap: 8px;
-            /* Space between icon and text */
-            font-size: 16px;
-            /* Text size */
-            text-align: center;
-            /* Ensures text and icon alignment inside the button */
-            outline: none;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-
-            /* Google-like subtle box shadow */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        .outlined-button:hover {
-            background-color: rgba(26, 115, 232, 0.1);
-            /* Light blue background on hover */
-            color: #135cbc;
-            /* Darker blue text and icon color on hover */
-            border-color: #135cbc;
-            /* Darker border on hover */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            /* Slightly stronger shadow on hover */
-        }
-
-        .material-icons {
-            font-size: 24px;
-            /* Custom font size for the icon */
-            color: inherit;
-            /* Inherit color from button text */
-        }
-    </style>
-
+    <link rel="stylesheet" href="./CSS/about.css">
 </head>
-
-
 <body>
-
-    <button class="custom-button">
-        <span class="material-icons">favorite</span>
-        Submit
-    </button>
-
-    <button class="outlined-button">
-        <span class="material-icons">key</span>
-        Time
-    </button>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <section class="about-section">
+            <h1>About Us</h1>
+            <div class="content-block">
+                <div class="text">
+                    <h2>Our Mission</h2>
+                    <p>At the SLIET Mentorship Platform, our mission is to bridge the gap between students and faculty mentors, providing personalized guidance and support that nurtures both academic and career development.</p>
+                </div>
+                <img src="ASSETS/ABOUT/mission.jpg" alt="Mission Image" class="dummy-image">
+            </div>
+            
+            <div class="content-block reverse">
+                <img src="ASSETS/ABOUT/what-we-do.png" alt="What We Do Image" class="dummy-image">
+                <div class="text">
+                    <h2>What We Do</h2>
+                    <p>We foster meaningful connections between students and experienced faculty members, enabling students to seek academic assistance, career advice, and skill-building support.</p>
+                    <ul>
+                        <li><span class="material-icons">person</span> One-on-One Mentorship Sessions</li>
+                        <li><span class="material-icons">schedule</span> Automated Booking System</li>
+                        <li><span class="material-icons">account_circle</span> Faculty Profiles</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <div class="text">
+                    <h2>Our Vision</h2>
+                    <p>We envision a future where every student at SLIET has access to the guidance and mentorship they need to thrive academically and professionally.</p>
+                </div>
+                <img src="ASSETS/ABOUT/vision.jpg" alt="Vision Image" class="dummy-image">
+            </div>
+            
+            <div class="content-block reverse">
+                <img src="ASSETS/ABOUT/why-choose-us.jpg" alt="Why Choose Us Image" class="dummy-image">
+                <div class="text">
+                    <h2>Why Choose Us</h2>
+                    <ul>
+                        <li><span class="material-icons">support</span> Personalized Support</li>
+                        <li><span class="material-icons">school</span> Experienced Mentors</li>
+                        <li><span class="material-icons">accessibility</span> Easy Accessibility</li>
+                        <li><span class="material-icons">lightbulb</span> Comprehensive Guidance</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <div class="text">
+                    <h2>Our Team</h2>
+                    <p>Our passionate team of faculty members from the Computer Science Department is committed to sharing their knowledge and helping students overcome challenges.</p>
+                    <ul>
+                        <li><span class="material-icons">book</span> Academic Tutoring</li>
+                        <li><span class="material-icons">work</span> Career Counseling</li>
+                        <li><span class="material-icons">code</span> Skill Development</li>
+                    </ul>
+                </div>
+                <img src="ASSETS/ABOUT/team.jpg" alt="Team Image" class="dummy-image">
+            </div>
+            
+            <div class="content-block reverse">
+                <img src="ASSETS/ABOUT/impact.jpg" alt="Impact Image" class="dummy-image">
+                <div class="text">
+                    <h2>Our Impact</h2>
+                    <p>Since its inception, the SLIET Mentorship Platform has helped numerous students gain clarity on their academic and career goals, build strong connections with faculty members, and access valuable resources for personal and professional development.</p>
+                </div>
+            </div>
+            
+            <div class="content-block">
+                <div class="text">
+                    <h2>Get Involved</h2>
+                    <p>We invite all students at SLIET to take advantage of this valuable resource. Sign up today and take the first step towards a more fulfilling academic and professional future.</p>
+                </div>
+                <img src="ASSETS/ABOUT/get-involved.jpg" alt="Get Involved Image" class="dummy-image">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 SLIET Mentorship Platform. All rights reserved.</p>
+    </footer>
+    <script src="./JS/about.js"></script>
 </body>
-
 </html>
