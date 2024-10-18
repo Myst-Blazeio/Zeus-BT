@@ -6,11 +6,15 @@
   <title>Mentorship Platform Login</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=login" />
   <link rel="stylesheet" href="./CSS/styles.css">
 </head>
 <body>
   <div class="login-container">
-    <h1>Mentorship Platform</h1>
+    <span class="material-symbols-outlined">
+      login
+    </span>
     <h2>Login</h2>
     <form id="login-form">
       <div class="input-group">
@@ -23,15 +27,19 @@
       </div>
       <div class="input-group">
         <span class="material-icons">email</span>
-        <input type="email" id="email" placeholder="Email" required>
+        <input type="email" id="email" placeholder="Email*" required>
       </div>
       <div class="input-group">
         <span class="material-icons">lock</span>
-        <input type="password" id="password" placeholder="Password" required>
+        <input type="password" id="password" placeholder="Password*" required>
       </div>
       <div class="input-group" id="mentor-id-group" style="display: none;">
         <span class="material-icons">badge</span>
         <input type="text" id="mentor-id" placeholder="Mentor ID">
+      </div>
+      <div class="remember-me">
+        <input type="checkbox" id="rememberMeCheckbox" class="remember-me-checkbox">
+        <label for="rememberMeCheckbox" class="remember-me-label">Remember Me</label>
       </div>
       <input type="submit" value="Login">
     </form>

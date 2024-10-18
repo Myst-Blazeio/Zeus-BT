@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile Card</title>
+    <link rel="stylesheet" href="./CSS/edit-profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div class="profile-card2">
+        <h2><span class="material-icons">edit</span> Edit Profile</h2>
+        <div class="profile-picture2">
+            <label for="profilePic"><span class="material-icons">account_circle</span> Edit Profile Picture</label>
+            <input type="file" id="profilePic2" accept="image/*">
+        </div>
+        <div class="input-group2">
+            <label for="name"><span class="material-icons">person</span> Edit Name</label>
+            <input type="text" id="name" placeholder="Your Name">
+        </div>
+        <div class="input-group2">
+            <label for="contact"><span class="material-icons">phone</span> Edit Contact Number</label>
+            <input type="tel" id="contact" placeholder="123-456-7890">
+        </div>
+        <div class="input-group2">
+            <label for="email"><span class="material-icons">email</span> Edit Email</label>
+            <input type="email" id="email" placeholder="example@example.com">
+        </div>
+        <div class="time-slots2">
+            <label><span class="material-icons">schedule</span> Select Time Slots</label>
+            <div id="timeSlotsContainer"></div>
+        </div>
+        <div class="date-picker2">
+            <label for="unavailableDate"><span class="material-icons">calendar_today</span> Select Unavailable
+                Date</label>
+            <input type="date" id="unavailableDate">
+        </div>
+        <button class="save-btn2" onclick="saveProfile()"><span class="material-icons">save</span> Save</button>
+    </div>
+    <script src="./JS/edit-profile.js"></script>
+</body>
+
+</html>

@@ -39,11 +39,5 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     }
 
     alert(`Logged in as ${role}`);
-
-    // Navigate to the respective dashboard
-    if (role === 'student') {
-        window.location.href = 'student-dashboard.html';
-    } else if (role === 'mentor') {
-        window.location.href = 'mentor-dashboard.html';
-    }
 });
+
