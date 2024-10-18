@@ -201,31 +201,21 @@ li:hover {
 .white{
     color:#f0f4f8
 }
+.red{
+    color: red;
+}
 
 .cancel-btn {
-    display: flex;
-    align-items: center;
-    background-color: #f3f4f6;
-    /* Red background */
-    color: #dc362e;
-    /* White text color */
+    background-color: transparent;
     border: none;
-    /* Remove border */
-    padding: 10px 15px;
-    /* Padding for the button */
-    border-radius: 5px;
-    /* Rounded corners */
     cursor: pointer;
-    /* Pointer cursor on hover */
-    transition: background-color 0.3s ease;
-    /* Smooth transition */
+    font-size: 30px;
+    padding: 5px;
+    transition: color 0.3s ease;
 }
+
 .cancel-btn:hover {
-    color: #ff0000;
+    color: #d32f2f;
+    /* Darker red on hover */
 }
-.cancel-btn .material-icons {
-    font-size: 40px;
-    /* Icon size */
-    margin-right: 5px;
-    /* Space between icon and text */
-}
+
