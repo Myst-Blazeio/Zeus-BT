@@ -5,56 +5,58 @@ body {
   padding: 20px;
 }
 
-/* .open-profile-btn {
-  background-color: #1e3a8a;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s;
-  display: flex;
-  align-items: center;
-}
-
-.open-profile-btn .material-icons {
-  margin-right: 8px;
-}
-
-.open-profile-btn:hover {
-  background-color: #3b82f6;
-  transform: scale(1.05);
-} */
-
-.modal {
-  display: flex;
-  justify-content: flex-end; /* Align modal to the right */
+.overlay {
   position: fixed;
-  z-index: 1000;
-  left: 0;
   top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Hide overflow */
-  background-color: rgba(0, 0, 0, 0.7);
-  transform: translateX(100%); /* Initially off-screen to the right */
-  transition: transform 0.5s ease; /* Smooth transition */
+  background: rgba(0, 0, 0, 0.6); /* Translucent black background */
+  z-index: 999;
+  transition: opacity 0.5s ease;
 }
 
-.modal.visible {
-  transform: translateX(0); /* Slide in from the right */
+.overlay.hidden {
+  display: none;
 }
 
-.modal-content {
-  background-color: #ffffff;
-  border-radius: 8px;
+.profile-section {
+  position: fixed;
+  top: 5%;
+  right: -100%;
+  max-width: 500px;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.5s ease;
+  z-index: 1000;
+}
+
+.profile-section.visible {
+  right: 0;
+}
+
+.profile-section.hidden {
+  display: none;
+}
+
+.profile-content {
+  width: 100%;
   padding: 20px;
-  width: 90%;
-  max-width: 500px; /* Restrict maximum width */
+  box-sizing: border-box;
   position: relative;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  overflow-y: auto; /* Allow vertical scrolling if needed */
-  max-height: 90vh; /* Restrict maximum height */
+  border-radius: 8px; /* Add this line for rounded edges */
+  background-color: white; /* Make sure the background is set */
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 15px; /* Add this line for rounded corners of the content */
 }
 
 .close {
@@ -66,34 +68,30 @@ body {
   cursor: pointer;
 }
 
-.profile-card {
-  display: flex;
-  align-items: flex-start; /* Align items to the start */
-}
-
 .profile-pic {
-  width: 100px; /* Adjusted for better fit */
-  height: 100px; /* Adjusted for better fit */
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
-  margin-right: 20px;
-  border: 2px solid #3b82f6;
+  margin-bottom: 10px;
 }
 
 .profile-info {
-  flex: 1; /* Allow the profile info to take remaining space */
+  flex: 1;
+  overflow-y: auto;
+  max-height: 80vh; /* Adjust for scrollable content */
 }
 
 .profile-info h4 {
   margin: 0;
   color: #1e3a8a;
-  font-size: 1.6em; /* Increased font size for the name */
+  font-size: 1.6em;
 }
 
 .profile-info .designation,
 .profile-info .department {
   font-weight: bold;
-  color: #4b5563; /* Darker gray for less emphasis */
-  font-size: 1.1em; /* Slightly larger font size */
+  color: #4b5563;
+  font-size: 1.1em;
 }
 
 .profile-info h5 {
@@ -108,13 +106,31 @@ body {
 
 .profile-info p {
   margin: 5px 0;
-  font-size: 1em; /* Standard font size */
+  font-size: 1em;
 }
 
 .profile-info .material-icons {
-  vertical-align: middle; /* Align icons with text */
+  vertical-align: middle;
 }
 
-.hidden {
-  display: none;
+.edit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn:hover {
+  background-color: #1565c0;
+}
+
+.edit-btn i {
+  font-size: 24px; /* Adjust the size of the icon */
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mentor Dashboard</title>
     <link rel="stylesheet" href="./CSS/mentor-dashboard.css">
+    <link rel="stylesheet" href="./CSS/profile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
@@ -18,7 +19,7 @@
             </div>
 
             <div class="quick-actions">
-                <button onclick="window.location.href='profile.html'" class="custom-button">
+                <button onclick="viewProfile()" class="custom-button">
                     <span class="material-icons">person</span>
                     View my profile
                 </button>
@@ -31,9 +32,9 @@
                     <span class="material-icons">send</span>
                     Send Notes
                 </button>
-                <button class="outlined-button">
+                <button class="outlined-button" onclick="scrollToSection()">
                     <span class="material-icons">visibility</span>
-                    See your past profile
+                    Upcoming Sessions
                 </button>
             </div>
 
@@ -66,7 +67,7 @@
                 </ul>
             </div>
 
-            <div class="schedule">
+            <div class="schedule" id="schedule">
                 <h2><span class="material-icons">schedule</span> Upcoming Sessions</h2>
                 <ul id="session-list">
                     <li><span class="material-icons">event</span> Session with Student 1 - Oct 20, 2024, 10:00 AM <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link">
@@ -97,7 +98,11 @@
             </div>
         </main>
     </div>
+<!-- Translucent Overlay -->
+<div id="overlay" class="overlay hidden" onclick="closeProfile()"></div>
 
+<!-- Profile Section (will be populated dynamically) -->
+<div id="profileSection" class="profile-section hidden"></div>
     <script src="./JS/mentor-dashboard.js"></script>
     <script src="./JS/profile.js"></script>
 </body>
