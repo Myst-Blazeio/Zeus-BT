@@ -64,7 +64,8 @@ header {
 }
 .dashboard-container {
   padding: 20px;
-  max-width: 1200px;
+  /* max-width: 1200px; */
+  width: 90%;
   margin: 0 auto;
   height: calc(100vh - 110px);
   overflow-y: scroll;
