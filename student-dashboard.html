@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentor Booking Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/student-dashboard.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="dashboard-container">
+        <div class="header">
+            <h1>Mentor Booking Portal</h1>
+            <div class="notification-icon" onclick="toggleNotifications()">
+                <span class="material-icons">notifications</span>
+                <span class="notification-count">2</span>
+            </div>
+        </div>
+        <div class="overlay" id="overlay" onclick="toggleNotifications()"></div>
+        <div class="notification-panel" id="notificationPanel">
+            <div class="notification-header">
+                <h2>Notifications</h2>
+                <span class="material-icons close-btn" onclick="toggleNotifications()">close</span>
+            </div>
+            <div class="notification-content">
+                <div class="notification">
+                    <span class="material-icons">event</span>
+                    <p>You have an upcoming session with Dr. Birmohan Singh at 3:00 PM</p>
+                </div>
+                <div class="notification">
+                    <span class="material-icons">event</span>
+                    <p>You have an upcoming session with Dr. Damanpreet Singh at 5:00 PM</p>
+                </div>
+                <!-- Add more notifications as needed -->
+            </div>
+        </div>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search for mentors...">
+        </div>
+        <div class="mentor-list">
+            <div class="mentor-card">
+                <img src="ASSETS/STUDENT-DASHBOARD/mentor1.jpg" alt="Mentor Image">
+                <div class="mentor-info">
+                    <h2>Dr. Birmohan Singh</h2>
+                    <p><span class="details-heading">Educational Qualifications:</span> Ph.D., M.E.</p>
+                    <p><span class="details-heading">Phone:</span> +91-1672-253208</p>
+                    <p><span class="details-heading">Email:</span> birmohansingh@sliet.ac.in , birmohans@gmail.com</p>
+                    <p><span class="details-heading">Availability:</span> <span class="available">Available</span></p>
+                </div>
+                <button class="book-slot" onclick="location.href='book-slot.html'">
+                    <span class="material-icons">schedule</span> Book a Slot
+                </button>
+            </div>
+            <div class="mentor-card">
+                <img src="ASSETS/STUDENT-DASHBOARD/mentor2.jpg" alt="Mentor Image">
+                <div class="mentor-info">
+                    <h2>Dr. Damanpreet Singh</h2>
+                    <p><span class="details-heading">Educational Qualifications:</span> Ph.D., M.Tech, B.Tech.</p>
+                    <p><span class="details-heading">Phone:</span> +91-1672-253210</p>
+                    <p><span class="details-heading">Email:</span> damanpreets@sliet.ac.in</p>
+                    <p><span class="details-heading">Availability:</span> <span class="available">Available</span></p>
+                </div>
+                <button class="book-slot" onclick="location.href='book-slot.html'">
+                    <span class="material-icons">schedule</span> Book a Slot
+                </button>
+            </div>
+            <div class="mentor-card">
+                <img src="ASSETS/STUDENT-DASHBOARD/mentor3.jpg" alt="Mentor Image">
+                <div class="mentor-info">
+                    <h2>Dr. Major Singh Goraya</h2>
+                    <p><span class="details-heading">Educational Qualifications:</span> Ph.D., M.Tech., B.Tech.</p>
+                    <p><span class="details-heading">Phone:</span> 01672-253212</p>
+                    <p><span class="details-heading">Email:</span> mjrsingh@yahoo.com</p>
+                    <p><span class="details-heading">Availability:</span> <span class="available">Available</span></p>
+                </div>
+                <button class="book-slot" onclick="location.href='book-slot.html'">
+                    <span class="material-icons">schedule</span> Book a Slot
+                </button>
+            </div>
+            <!-- Add more mentor cards as needed -->
+        </div>
+    </div>
+    <script src="./JS/student-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,259 @@
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1e88e5;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #311b92;
+    border-radius: 5px;
+}
+
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 500;
+    margin-left: 36%;
+}
+
+.notification-icon {
+    position: relative;
+    cursor: pointer;
+}
+
+.notification-icon .material-icons {
+    font-size: 36px;
+    color: #1e88e5;
+}
+
+.notification-count {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.notification-panel {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 350px;
+    height: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px 0 0 10px;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    transition: right 0.3s ease;
+    overflow-y: auto;
+}
+
+.notification-panel.open {
+    right: 0;
+}
+
+.notification-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.notification-header h2 {
+    margin: 0;
+    color: #333;
+    font-weight: 500;
+}
+
+.notification-header .close-btn {
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.notification-content {
+    max-height: calc(100% - 60px);
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.notification-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.notification-content::-webkit-scrollbar-thumb {
+    background-color: #1e88e5;
+    border-radius: 4px;
+}
+
+.notification-content::-webkit-scrollbar-track {
+    background-color: #f0f4f8;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification span.material-icons {
+    color: #1e88e5;
+    margin-right: 10px;
+}
+
+.notification p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-box input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-box input:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 5px rgba(30, 136, 229, 0.5);
+}
+
+.mentor-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.mentor-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.mentor-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.mentor-info {
+    flex: 1;
+}
+
+.mentor-info h2 {
+    margin: 10px 0;
+    color: #333;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.mentor-info p {
+    margin: 5px 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.mentor-info p .details-heading {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.available {
+    color: green;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.book-slot {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.book-slot:hover {
+    background-color: #135cbc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
