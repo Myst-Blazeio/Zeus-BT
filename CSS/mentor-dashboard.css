@@ -344,6 +344,12 @@ li:hover {
         min-width: 100%;
         max-width: 100%;
     }
+    .gmeet{
+        flex-direction: column;
+    }
+    .meet-link{
+        width: 100%;
+    }
 }
 
 /* Small devices (landscape phones) */
@@ -375,6 +381,12 @@ li:hover {
     .statistic {
         min-width: 100%;
         max-width: 100%;
+    }
+    .gmeet{
+        flex-direction: column;
+    }
+    .meet-link{
+        width: 100%;
     }
 }
 
@@ -409,6 +421,12 @@ li:hover {
         min-width: 45%;
         max-width: 45%;
     }
+    .gmeet{
+        flex-direction: column;
+    }
+    .meet-link{
+        width: 100%;
+    }
 }
 
 /* Large devices (desktops) */
@@ -441,6 +459,12 @@ li:hover {
     .statistic {
         min-width: 30%;
         max-width: 30%;
+    }
+    .gmeet{
+        flex-direction: column;
+    }
+    .meet-link{
+        width: 100%;
     }
 }
 

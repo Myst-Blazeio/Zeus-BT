@@ -40,3 +40,7 @@ document.getElementById('sendButton').addEventListener('click', function() {
         studentSelect.value = ''; // Reset selection
     }
 });
+
+document.getElementById('uploadResourceButton').addEventListener('click', function() {
+    document.getElementById('fileInput').click();
+});
