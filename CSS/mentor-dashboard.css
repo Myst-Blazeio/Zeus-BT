@@ -196,3 +196,31 @@ li:hover {
     vertical-align: middle; /* Align icons with text */
     margin-right: 5px; /* Space between icon and text */
 }
+
+.cancel-btn {
+    display: flex;
+    align-items: center;
+    background-color: #f3f4f6;
+    /* Red background */
+    color: #dc362e;
+    /* White text color */
+    border: none;
+    /* Remove border */
+    padding: 10px 15px;
+    /* Padding for the button */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition */
+}
+.cancel-btn:hover {
+    color: #ff0000;
+}
+.cancel-btn .material-icons {
+    font-size: 40px;
+    /* Icon size */
+    margin-right: 5px;
+    /* Space between icon and text */
+}
