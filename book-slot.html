@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Mentorship Slot</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/book-slot.css">
+</head>
+<body>
+    <div class="booking-form-container">
+        <span class="material-icons go-back" onclick="goBack()">arrow_back</span>
+        <form id="booking-form">
+            <h2>Book Your Mentorship Session</h2>
+            
+            <label for="student-name">Full Name:</label>
+            <input type="text" id="student-name" name="student-name" required>
+            
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" name="student-id" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Phone Number (optional):</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="guidance-topic">Preferred Topic/Area of Guidance:</label>
+            <textarea id="guidance-topic" name="guidance-topic" required></textarea>
+            
+            <label for="additional-notes">Additional Notes (optional):</label>
+            <textarea id="additional-notes" name="additional-notes"></textarea>
+            
+            <label for="timeslot">Available Time Slots:</label>
+            <div class="timeslot-container" id="timeslot-container">
+                <!-- Static slots with some booked -->
+                <button type="button" class="timeslot" data-value="10:00 AM">10:00 AM</button>
+                <button type="button" class="timeslot" data-value="11:00 AM">11:00 AM</button>
+                <button type="button" class="timeslot" data-value="12:00 PM">12:00 PM</button>
+                <button type="button" class="timeslot booked" data-value="1:00 PM" disabled>1:00 PM</button>
+                <button type="button" class="timeslot" data-value="2:00 PM">2:00 PM</button>
+                <button type="button" class="timeslot booked" data-value="3:00 PM" disabled>3:00 PM</button>
+                <button type="button" class="timeslot" data-value="4:00 PM">4:00 PM</button>
+                <button type="button" class="timeslot" data-value="5:00 PM">5:00 PM</button>
+            </div>
+            
+            <input type="hidden" id="timeslot" name="timeslot" required>
+            
+            <button type="submit">
+                <span class="material-icons">send</span> Book Session
+            </button>
+        </form>
+    </div>
+    <script src="./JS/book-slot.js"></script>
+</body>
+</html>
