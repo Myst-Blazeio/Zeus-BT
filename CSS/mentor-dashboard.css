@@ -237,7 +237,22 @@ li:hover {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 400px;
+    width: 400px; /* Set a width for the modal */
+    max-width: 90%; /* Responsive */
+    position: relative; /* To position the close button */
+}
+
+.close {
+    cursor: pointer;
+    font-size: 24px; /* Size of the close button */
+    color: #aaa; /* Default color */
+    position: absolute; /* Positioning for better placement */
+    top: 10px; /* Distance from top */
+    right: 10px; /* Distance from right */
+}
+
+.close:hover {
+    color: #000; /* Color on hover */
 }
 
 .close-button {
@@ -312,6 +327,78 @@ li:hover {
     background-color: #3b82f6;
 }
 
+/* Edit Profile Modal Styles */
+.edit-profile-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001; /* Ensure it's above other elements */
+}
+
+.edit-profile-modal .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* Fixed width for the modal */
+    max-width: 90%; /* Responsive width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.edit-profile-modal .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-profile-modal .close-button {
+    cursor: pointer;
+    font-size: 24px;
+    color: #aaa;
+}
+
+.edit-profile-modal .close-button:hover {
+    color: #000;
+}
+
+.edit-profile-modal input[type="text"],
+.edit-profile-modal input[type="tel"] {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.edit-profile-modal button.save-btn {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edit-profile-modal button.save-btn:hover {
+    background-color: #135cbc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* -------------------- */
+
 /* Responsive Styling */
 
 /* Extra small devices (phones, portrait phones) */
@@ -346,6 +433,13 @@ li:hover {
     }
 }
 
+
+/* Responsive Styling for Modal */
+@media (max-width: 575px) {
+    .edit-profile-modal .modal-content {
+        width: 90%; /* Full width on small screens */
+    }
+}
 /* Small devices (landscape phones) */
 @media (min-width: 576px) and (max-width: 767px) {
     .dashboard {
