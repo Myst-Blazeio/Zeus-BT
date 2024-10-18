@@ -62,7 +62,7 @@ function saveProfile() {
 }
 
 // Trigger the Edit Profile Modal on clicking the icon
-document.addEventListener('DOMContentLoaded', function () {
-    const editProfileIcon = document.getElementById('editProfileIcon');
-    editProfileIcon.addEventListener('click', openEditProfileModal);
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//     const editProfileIcon = document.getElementById('editProfileIcon');
+//     editProfileIcon.addEventListener('click', openEditProfileModal);
+// });

@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
     timeSlots.forEach(time => {
         const timeButton = document.createElement('button');
         timeButton.textContent = time;
-        timeButton.className = 'time-slot-btn';
+        timeButton.className = 'time-slot-btn2';
         timeButton.addEventListener('click', () => {
-            timeButton.classList.toggle('selected');
+            timeButton.classList.toggle('selected2');
         });
         timeSlotsContainer.appendChild(timeButton);
     });
