@@ -149,6 +149,11 @@ h1 {
   cursor: pointer;
 }
 
+.notification-div{
+  display: flex;
+  flex-direction: row;
+}
+
 .notification:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
