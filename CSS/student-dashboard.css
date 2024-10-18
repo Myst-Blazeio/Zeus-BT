@@ -45,7 +45,6 @@ h1 {
   text-align: center;
   color: #333;
   font-weight: 500;
-  margin-left: 36%;
 }
 
 .notification-icon {
@@ -83,8 +82,8 @@ h1 {
 .notification-panel {
   position: fixed;
   top: 0;
-  right: -400px;
-  width: 400px;
+  right: -350px;
+  width: 350px;
   height: 100%;
   background: #fff;
   padding: 20px;
@@ -143,6 +142,8 @@ h1 {
   align-items: flex-end;
   margin-bottom: 15px;
   padding: 10px;
+  border-radius: 5px;
+  background: #f9f9f9;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
   cursor: pointer;
@@ -153,9 +154,10 @@ h1 {
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-.notification .cancel-session:focus {
-  outline: none; /* Remove default outline */
-  box-shadow: 0 0 5px rgba(30, 136, 229, 0.5); /* Add focus shadow */
+.notification .notification-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .notification span.material-icons {
@@ -167,32 +169,24 @@ h1 {
   margin: 0;
   color: #666;
   font-size: 14px;
-  text-align: center;
+  text-align: left;
+  flex: 1;
 }
 
-.notification-div{
-  display: flex;
-  align-items: space-between;
-}
-
-.cancel-session {
+.notification .cancel-session {
   margin-top: 10px;
-  background-color: #dc362e; /* Red background */
-  color: white; /* White text */
-  border: none; /* Remove border */
-  padding: 10px 15px; /* Increase padding for a larger button */
-border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-  font-size: 16px; /* Larger font size */
-  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
-}
-.notification .cancel-session:hover {
-  background-color: #d32f2f; /* Darker red on hover */
-  transform: translateY(-2px); /* Slight lift effect */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* More pronounced shadow on hover */
+  background-color: #e53935;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+.notification .cancel-session:hover {
+  background-color: #d32f2f;
+}
 
 .search-box {
   display: flex;
@@ -307,12 +301,30 @@ border-radius: 5px; /* Rounded corners */
   }
 
   .notification-panel {
-      width: 100%;
-      right: -200%;
+      width: 93%;
+      right: -700px;
   }
 
   .notification-panel.open {
       right: 0;
+  }
+
+  .notification-div{
+    width: 100%;
+  }
+
+  .notification {
+      flex-direction: column;
+      align-items: flex-end;
+  }
+
+  .notification .notification-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .notification span.material-icons {
+      margin-bottom: 10px;
   }
 
   .mentor-card {
@@ -351,12 +363,30 @@ border-radius: 5px; /* Rounded corners */
   }
 
   .notification-panel {
-      width: 100%;
-      right: -200%;
+    width: 581px;
+    right: -9000px;
   }
 
   .notification-panel.open {
       right: 0;
+  }
+
+  .notification {
+      flex-direction: column;
+      align-items: flex-end;
+  }
+
+  .notification-div{
+    width: 100%;
+  }
+
+  .notification .notification-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .notification span.material-icons {
+      margin-bottom: 10px;
   }
 
   .mentor-card {
@@ -395,12 +425,30 @@ border-radius: 5px; /* Rounded corners */
   }
 
   .notification-panel {
-      width: 100%;
-      right: -200%;
+      width: 765px;
+      right: -950px;
+  }
+
+  .notification-div{
+    width: 100%;
   }
 
   .notification-panel.open {
       right: 0;
+  }
+
+  .notification {
+      flex-direction: column;
+      align-items: flex-end;
+  }
+
+  .notification .notification-content {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .notification span.material-icons {
+      margin-bottom: 10px;
   }
 
   .mentor-card {
@@ -444,7 +492,7 @@ border-radius: 5px; /* Rounded corners */
   }
 
   .notification-panel.open {
-      right: 0;
+      right: 10px;
   }
 
   .mentor-card {
