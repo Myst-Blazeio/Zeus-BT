@@ -1,0 +1,221 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+.dashboard-main {
+    flex: 1;
+    padding: 20px;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.user-info img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+    border-radius: 50%;
+}
+
+.quick-actions {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.meet-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: bold;
+    margin-top: 10px;
+    background-color: #e5e7eb;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 15%;
+  }
+  
+  .meet-link:hover {
+    background-color: #3b82f6;
+    color: #ffffff;
+  }
+  
+  .meet-link .material-icons {
+    margin-right: 5px;
+  }
+
+.quick-actions button {
+    margin-bottom: 10px;
+    width: 250px; /* Fixed width for all buttons */
+    height: 45px; /* Fixed height for all buttons */
+    font-size: 16px; /* Consistent font size */
+    border-radius: 8px; /* Rounded corners */
+    display: flex; /* Align icon and text properly */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon and text horizontally */
+    gap: 8px; /* Space between icon and text */
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.statistic {
+    text-align: center;
+    background-color: #f0f4f8; /* Set background color */
+    padding: 15px; /* Ensure consistent padding */
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    flex: 1; /* Allow statistics to take equal space */
+    margin: 10px; /* Add margin between items */
+    min-width: 150px; /* Set minimum width */
+    max-width: 200px; /* Set maximum width */
+    height: 120px; /* Set a fixed height */
+    transition: background-color 0.3s ease;
+}
+
+.statistic:hover {
+    background-color: #e0e7ef; /* Slightly darker on hover */
+}
+
+.statistic h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.statistic p {
+    font-size: 14px; /* Slightly smaller font for the description */
+    color: #555; /* Slightly darker color for text */
+}
+
+.custom-button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button:hover {
+    background-color: #135cbc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.outlined-button {
+    background-color: transparent;
+    color: #1a73e8;
+    border: 2px solid #1a73e8;
+    border-radius: 8px;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.outlined-button:hover {
+    background-color: rgba(26, 115, 232, 0.1);
+    color: #135cbc;
+    border-color: #135cbc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-header .logo img {
+    width: 100px; /* Adjust the width as needed */
+    height: auto;
+}
+
+/* New Section Styles */
+.student-management, .schedule, .resources, .notifications {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f0f4f8; /* Set background color */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.student-management h2, .schedule h2, .resources h2, .notifications h2 {
+    margin-top: 0;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px); /* Adjust for padding */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+li {
+    padding: 8px;
+    border-bottom: 1px solid #eee; /* Add a separator */
+}
+
+li:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+li:hover {
+    background-color: #f9f9f9; /* Highlight on hover */
+}
+
+/* Icon styles */
+.material-icons {
+    vertical-align: middle; /* Align icons with text */
+    margin-right: 5px; /* Space between icon and text */
+    color:#1e88e5
+}
+
+.white{
+    color:#f0f4f8
+}
+.red{
+    color: red;
+}
+
+.cancel-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.cancel-btn:hover {
+    color: #d32f2f;
+    /* Darker red on hover */
+}
+
