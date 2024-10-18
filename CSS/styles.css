@@ -8,26 +8,29 @@ body {
   margin: 0;
 }
 
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1e88e5;
+  font-size: 40px;
+}
+
 .login-container {
   background: #f9f9f9;
-  padding: 20px 40px;
+  padding: 20px 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   width: 350px;
 }
 
-.login-container h1 {
-  text-align: center;
-  margin-bottom: 10px;
-  color: #333;
-  font-weight: 500;
-}
-
 .login-container h2 {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-weight: 500;
   text-align: center;
   color: #333;
+  margin-top: 0;
 }
 
 .input-group {
@@ -51,7 +54,7 @@ body {
   background: transparent;
   outline: none;
   width: 100%;
-  padding: 10px 5px;
+  padding: 5px 5px;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
@@ -76,4 +79,23 @@ body {
 .input-group input:focus {
   border-color: #1e88e5;
   outline: none;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 30px 0;
+  cursor: pointer;
+}
+
+.remember-me-checkbox {
+  /* appearance: none; */
+  width: 18px;
+  height: 18px;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+  position: relative;
 }

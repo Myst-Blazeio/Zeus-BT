@@ -1,0 +1,157 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 7, 7, 0.779); /* Translucent black background */
+  z-index: 999;
+  transition: opacity 0.5s ease;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.profile-section {
+  position: fixed;
+  top: 5%;
+  right: -100%;
+  max-width: 500px;
+  height: 90%;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.5s ease;
+  z-index: 1000;
+}
+
+.profile-section.visible {
+  right: 0;
+}
+
+.profile-section.hidden {
+  display: none;
+}
+
+.profile-content {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 8px; /* Add this line for rounded edges */
+  background-color: white; /* Make sure the background is set */
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-radius: 15px; /* Add this line for rounded corners of the content */
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: #1e3a8a;
+  cursor: pointer;
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #2650c5;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profile-info {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 80vh; /* Adjust for scrollable content */
+}
+
+.profile-info h4 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 1.6em;
+}
+
+.profile-info .designation,
+.profile-info .department {
+  font-weight: bold;
+  color: #4b5563;
+  font-size: 1.1em;
+}
+
+.profile-info h5 {
+  margin: 10px 0 5px;
+  color: #1e3a8a;
+}
+
+.profile-info ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.profile-info p {
+  margin: 5px 0;
+  font-size: 1em;
+}
+
+.profile-info .material-icons {
+  vertical-align: middle;
+}
+
+.edit-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #1e88e5; */
+  color: white;
+  border: 1px solid #1e3a8a;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.edit-btn:hover {
+  background-color: #cccfd3;
+}
+
+.edit-btn i {
+  font-size: 24px; /* Adjust the size of the icon */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Track color */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:#aac0ec; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners */
+  border: 3px solid #f0f0f0; /* Space around the thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aac0ec; /* Color when hovering */
+}
