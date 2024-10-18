@@ -4,26 +4,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | My Website</title>
-    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>Button with Google Material Icon</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+    <style>
+        .custom-button {
+            background-color: #1a73e8;
+            /* Updated button background color (Google blue) */
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            /* Space between icon and text */
+            font-size: 16px;
+            /* Text size */
+            outline: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+
+            /* Google-like subtle box shadow */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .custom-button:hover {
+            background-color: #135cbc;
+            /* Darker shade of Google blue on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Slightly stronger shadow on hover */
+        }
+
+        .material-icons {
+            font-size: 24px;
+            /* Custom font size for the icon */
+            color: #ffffff;
+            /* Custom icon color */
+        }
+
+        .outlined-button {
+            background-color: transparent;
+            /* Transparent background */
+            color: #1a73e8;
+            /* Text and icon color set to Google blue */
+            border: 2px solid #1a73e8;
+            /* Border color (Google blue) */
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            /* Vertically center the icon and text */
+            justify-content: center;
+            /* Horizontally center the icon and text */
+            gap: 8px;
+            /* Space between icon and text */
+            font-size: 16px;
+            /* Text size */
+            text-align: center;
+            /* Ensures text and icon alignment inside the button */
+            outline: none;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+
+            /* Google-like subtle box shadow */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .outlined-button:hover {
+            background-color: rgba(26, 115, 232, 0.1);
+            /* Light blue background on hover */
+            color: #135cbc;
+            /* Darker blue text and icon color on hover */
+            border-color: #135cbc;
+            /* Darker border on hover */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* Slightly stronger shadow on hover */
+        }
+
+        .material-icons {
+            font-size: 24px;
+            /* Custom font size for the icon */
+            color: inherit;
+            /* Inherit color from button text */
+        }
+    </style>
+
 </head>
 
+
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact Us</a>
-        </nav>
-    </header>
-    <main>
-        <h1>About Us</h1>
-        <p>Learn more about our journey and how we make a difference.</p>
-    </main>
-    <footer>
-        <p>&copy; 2024 My Website. All rights reserved.</p>
-    </footer>
-    <script src="./JS/script.js"></script>
+
+    <button class="custom-button">
+        <span class="material-icons">favorite</span>
+        Submit
+    </button>
+
+    <button class="outlined-button">
+        <span class="material-icons">key</span>
+        Time
+    </button>
 </body>
 
 </html>
