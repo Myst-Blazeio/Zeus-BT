@@ -202,6 +202,26 @@ h1 {
   background-color: #d32f2f;
 }
 
+.mark-as-seen-button{
+  margin-top: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.mark-as-seen-button:hover {
+  background-color: #2ecc71;
+}
+
+.mark-as-seen-button:active {
+  background-color: #27ae60; /* Darker green when clicked */
+}
+
 .search-box {
   display: flex;
   justify-content: center;
