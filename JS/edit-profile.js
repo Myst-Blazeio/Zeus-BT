@@ -33,6 +33,19 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Function to save profile (dummy function for demonstration)
-function saveProfile() {
-    alert('Profile saved successfully!');
+// function saveProfile() {
+//     alert('Profile saved successfully!');
+// }
+
+function goBack() {
+    window.location.href = 'mentor-dashboard.html';
+}
+
+function showSuccessMessage() {
+    const successMessage = document.getElementById('successMessage');
+    successMessage.style.display = 'block';
+    setTimeout(() => {
+        successMessage.style.display = 'none';
+        goBack();
+    }, 2000);
 }
