@@ -385,7 +385,23 @@ h1 {
   h1 {
       margin-left: 0;
   }
-
+  .navbar{
+    padding: 0 7px;
+  }
+  .title h1{
+    font-size: 15px;
+    display: none;
+  }
+  .logo img {
+    width: 40px;
+    height: auto;
+  }
+  .nav-links{
+    gap: 10px;
+  }
+  .nav-links li a{
+    font-size: 13px;
+  }
   .notification-panel {
       width: 93%;
       right: -700px;
@@ -447,7 +463,19 @@ h1 {
   h1 {
       margin-left: 0;
   }
-
+  .navbar{
+    padding: 0 7px;
+  }
+  .title h1{
+    font-size: 18px;
+  }
+  .logo img {
+    width: 40px;
+    height: auto;
+  }
+  .nav-links li a{
+    font-size: 15px;
+  }
   .notification-panel {
     width: 581px;
     right: -9000px;
