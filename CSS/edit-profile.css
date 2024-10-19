@@ -109,3 +109,30 @@ body {
     margin: 0 auto;
     /* Center the button horizontally */
 }
+
+/* success message */
+.success-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1000;
+}
+
+.success-message span.material-icons {
+    font-size: 48px;
+    color: green;
+}
+
+.success-message p {
+    margin: 10px 0 0;
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+}
