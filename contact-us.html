@@ -28,27 +28,38 @@
     <section class="contact-form-section">
         <div class="contact-form-container">
             <form class="contact-form" id="contactForm">
+                <!-- Name Field -->
                 <div class="form-group">
-                    <label for="name">Name</label>
+                    <label for="name">
+                        <span class="material-icons">person</span> Name
+                    </label>
                     <input type="text" id="name" name="name" placeholder="Your Name" required>
                 </div>
-
+                <!-- Email Field -->
                 <div class="form-group">
-                    <label for="email">Email</label>
+                    <label for="email">
+                        <span class="material-icons">email</span> Email
+                    </label>
                     <input type="email" id="email" name="email" placeholder="Your Email" required>
                 </div>
-
+                <!-- Subject Field -->
                 <div class="form-group">
-                    <label for="subject">Subject</label>
+                    <label for="subject">
+                        <span class="material-icons">subject</span> Subject
+                    </label>
                     <input type="text" id="subject" name="subject" placeholder="Subject" required>
                 </div>
-
+                <!-- Message Field -->
                 <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <label for="message">
+                        <span class="material-icons">message</span> Message
+                    </label>
+                    <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
                 </div>
-
-                <button type="submit" class="submit-button">Send Message</button>
+                <!-- Submit Button -->
+                <button type="submit" class="submit-button">
+                    <span class="material-icons submit">send</span> Send Message
+                </button>
             </form>
         </div>
     </section>

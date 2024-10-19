@@ -43,9 +43,11 @@ body {
 .contact-form {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center the form elements horizontally */
 }
 
 .form-group {
+    width: 100%;
     margin-bottom: 1.5rem;
 }
 
@@ -60,17 +62,31 @@ body {
 .form-group input,
 .form-group textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 12px 1px; /* Adjusted padding for better vertical alignment */
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9; /* Light background for the input fields */
+    transition: border-color 0.3s ease-in-out; /* Smooth focus effect */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999; /* Subtle placeholder text color */
+    line-height: 1.5; /* Line-height to better center placeholder text vertically */
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #6200ea;
+    border-color: #6200ea; /* Focus color */
+    background-color: #fff; /* White background on focus */
+}
+
+.form-group textarea {
+    resize: none; /* Prevent resizing */
 }
 
 .submit-button {
@@ -81,10 +97,33 @@ body {
     border-radius: 5px;
     font-weight: 500;
     cursor: pointer;
+    width: 100%;
+    max-width: 200px; /* Constrain button width */
 }
 
 .submit-button:hover {
     background-color: #3700b3;
+}
+
+/* Icon Styles */
+.material-icons {
+    vertical-align: middle;
+    margin-right: 8px; /* Adds some space between the icon and the text */
+    color: blue; /* Match the theme color */
+}
+
+.submit{
+    color:white
+}
+
+/* Adjust the size of the icons */
+.form-group .material-icons {
+    font-size: 20px; /* Adjust size to match text */
+}
+
+.submit-button .material-icons {
+    font-size: 18px;
+    margin-right: 5px;
 }
 
 /* Footer */
