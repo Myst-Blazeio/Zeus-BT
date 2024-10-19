@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./CSS/student-dashboard.css">
 </head>
+
 <body>
     <!-- <header>
         <nav>
@@ -19,7 +21,7 @@
     <nav class="navbar">
         <div class="navbar-container">
             <div class="logo">
-                <img src="./ASSETS/STUDENT-DASHBOARD/Logo.jpg" alt="Logo" class="nav-logo-jpg"/>
+                <img src="./ASSETS/STUDENT-DASHBOARD/Logo.jpg" alt="Logo" class="nav-logo-jpg" />
             </div>
             <div class="title">
                 <h1>SLIET Mentoring Portal</h1>
@@ -36,7 +38,7 @@
             <h1>Mentor Booking Portal</h1>
             <div class="notification-icon" onclick="toggleNotifications()">
                 <span class="material-icons">notifications</span>
-                <span class="notification-count">2</span>
+                <span class="notification-count">3</span>
             </div>
         </div>
         <div class="overlay" id="overlay" onclick="toggleNotifications()"></div>
@@ -48,117 +50,194 @@
             <div class="notification-content">
                 <div class="notification">
                     <div class="notification-div">
-                        <span class="material-icons">event</span>
-                        <p>You have an upcoming session with Dr. Birmohan Singh at 3:00 PM</p>
+                        <a href="https://calendar.google.com/" target="_blank">
+                            <span class="material-icons">event</span>
+                        </a>
+                        <p>
+                            You have an upcoming session with Dr. Birmohan Singh at 3:00 PM
+                        </p>
                     </div>
-                    <div class="cancel-session">
-                        cancel
-                    </div>
+                    <div class="cancel-session">cancel</div>
                 </div>
                 <div class="notification">
                     <div class="notification-div">
-                        <span class="material-icons">event</span>
-                        <p>You have an upcoming session with Dr. Damanpreet Singh at 5:00 PM</p>
+                        <a href="https://calendar.google.com/" target="_blank">
+                            <span class="material-icons">event</span>
+                        </a>
+                        <p>
+                            You have an upcoming session with Dr. Damanpreet Singh at 5:00
+                            PM
+                        </p>
                     </div>
-                    <div class="cancel-session">
-                        cancel
-                    </div>
+                    <div class="cancel-session">cancel</div>
                 </div>
                 <div class="notification">
                     <div class="notification-div">
-                        <span class="material-icons">event</span>
-                        <p>You have an upcoming session with Dr. Damanpreet Singh at 9:00 PM</p>
+                        <!-- <a href="https://calendar.google.com/" target="_blank"> -->
+                        <span class="material-icons">message</span>
+                        </a>
+                        <p>
+                            Dr. Manoj Sachan: "Submit your assignment by 11:59 PM today"
+                        </p>
                     </div>
-                    <div class="cancel-session">
-                        cancel
+                    <div class="mark-as-seen-button">Mark as seen</div>
+                </div>
+                <div class="notification">
+                    <div class="notification-div">
+                        <a href="https://calendar.google.com/" target="_blank">
+                            <span class="material-icons">event</span>
+                        </a>
+                        <p>
+                            You have an upcoming session with Dr. Damanpreet Singh at 9:00
+                            PM
+                        </p>
                     </div>
+                    <div class="cancel-session">cancel</div>
                 </div>
             </div>
         </div>
         <div class="search-box">
-            <input type="text" id="search" placeholder="Search for mentors...">
+            <input type="text" id="search" placeholder="Search for mentors..." />
         </div>
         <div class="mentor-list">
             <div class="mentor-card">
-                <img src="assets/STUDENT-DASHBOARD/mentor1.jpg" alt="Mentor Image">
+
+                <img src="./ASSETS/STUDENT-DASHBOARD/mentor1.jpg" alt="Mentor Image">
+
                 <div class="mentor-info">
                     <h2>Dr. Birmohan Singh</h2>
-                    <p><span class="details-heading">Educational Qualifications:</span> Ph.D., M.E.</p>
+                    <p>
+                        <span class="details-heading">Educational Qualifications:</span>
+                        Ph.D., M.E.
+                    </p>
                     <p><span class="details-heading">Phone:</span> +91-1672-253208</p>
-                    <p><span class="details-heading">Email:</span> birmohansingh@sliet.ac.in , birmohans@gmail.com</p>
-                    <p><span class="details-heading">Availability:</span> <span class="available">Available</span></p>
+                    <p>
+                        <span class="details-heading">Email:</span>
+                        birmohansingh@sliet.ac.in , birmohans@gmail.com
+                    </p>
+                    <p>
+                        <span class="details-heading">Availability:</span>
+                        <span class="available">Available</span>
+                    </p>
                 </div>
                 <button class="book-slot" onclick="location.href='book-slot.html'">
                     <span class="material-icons">schedule</span> Book a Slot
                 </button>
             </div>
             <div class="mentor-card">
-                <img src="assets/STUDENT-DASHBOARD/mentor2.jpg" alt="Mentor Image">
+                <img src="assets/STUDENT-DASHBOARD/mentor2.jpg" alt="Mentor Image" />
                 <div class="mentor-info">
                     <h2>Dr. Damanpreet Singh</h2>
-                    <p><span class="details-heading">Educational Qualifications:</span> Ph.D., M.Tech, B.Tech.</p>
+                    <p>
+                        <span class="details-heading">Educational Qualifications:</span>
+                        Ph.D., M.Tech, B.Tech.
+                    </p>
                     <p><span class="details-heading">Phone:</span> +91-1672-253210</p>
-                    <p><span class="details-heading">Email:</span> damanpreets@sliet.ac.in</p>
-                    <p><span class="details-heading">Availability:</span> <span class="available">Available</span></p>
+                    <p>
+                        <span class="details-heading">Email:</span>
+                        damanpreets@sliet.ac.in
+                    </p>
+                    <p>
+                        <span class="details-heading">Availability:</span>
+                        <span class="not-available">Not available</span>
+                    </p>
                 </div>
-                <button class="book-slot" onclick="location.href='book-slot.html'">
+                <button class="book-slot disabled" onclick="location.href='book-slot.html'">
                     <span class="material-icons">schedule</span> Book a Slot
                 </button>
             </div>
             <div class="mentor-card">
-                <img src="assets/STUDENT-DASHBOARD/mentor3.jpg" alt="Mentor Image">
+                <img src="assets/STUDENT-DASHBOARD/mentor3.jpg" alt="Mentor Image" />
                 <div class="mentor-info">
                     <h2>Dr. Major Singh Goraya</h2>
-                    <p><span class="details-heading">Educational Qualifications:</span> Ph.D., M.Tech., B.Tech.</p>
+                    <p>
+                        <span class="details-heading">Educational Qualifications:</span>
+                        Ph.D., M.Tech., B.Tech.
+                    </p>
                     <p><span class="details-heading">Phone:</span> 01672-253212</p>
-                    <p><span class="details-heading">Email:</span> mjrsingh@yahoo.com</p>
-                    <p><span class="details-heading">Availability:</span> <span class="available">Available</span></p>
+                    <p>
+                        <span class="details-heading">Email:</span> mjrsingh@yahoo.com
+                    </p>
+                    <p>
+                        <span class="details-heading">Availability:</span>
+                        <span class="not-available">Booked</span>
+                    </p>
                 </div>
-                <button class="book-slot" onclick="location.href='book-slot.html'">
+                <button class="book-slot disabled" onclick="location.href='book-slot.html'">
                     <span class="material-icons">schedule</span> Book a Slot
                 </button>
             </div>
             <div class="mentor-card">
-                <img src="assets/STUDENT-DASHBOARD/mentor4.jpg" alt="Mentor Image">
+                <img src="assets/STUDENT-DASHBOARD/mentor4.jpg" alt="Mentor Image" />
                 <div class="mentor-info">
                     <h2>Dr. Major Singh Goraya</h2>
-                    <p><span class="details-heading">Educational Qualifications:</span> Ph.D., M.Tech., B.Tech.</p>
+                    <p>
+                        <span class="details-heading">Educational Qualifications:</span>
+                        Ph.D., M.Tech., B.Tech.
+                    </p>
                     <p><span class="details-heading">Phone:</span> 01672-253212</p>
-                    <p><span class="details-heading">Email:</span> mjrsingh@yahoo.com</p>
-                    <p><span class="details-heading">Availability:</span> <span class="available">Available</span></p>
+                    <p>
+                        <span class="details-heading">Email:</span> mjrsingh@yahoo.com
+                    </p>
+                    <p>
+                        <span class="details-heading">Availability:</span>
+                        <span class="available">Available</span>
+                    </p>
                 </div>
                 <button class="book-slot" onclick="location.href='book-slot.html'">
                     <span class="material-icons">schedule</span> Book a Slot
                 </button>
             </div>
-            <div class="mentor-card">
-                <img src="assets/STUDENT-DASHBOARD/mentor5.jpg" alt="Mentor Image">
+            <div class="mentor-card ">
+                <img src="assets/STUDENT-DASHBOARD/mentor5.jpg" alt="Mentor Image" />
                 <div class="mentor-info">
                     <h2>Dr. Manoj Sachan</h2>
-                    <p><span class="details-heading">Educational Qualifications:</span> B.Tech(Computer Science) , M.E(Computer Science), Ph.D (Computer Science & Engineering)</p>
+                    <p>
+                        <span class="details-heading">Educational Qualifications:</span>
+                        B.Tech(Computer Science) , M.E(Computer Science), Ph.D (Computer
+                        Science & Engineering)
+                    </p>
                     <p><span class="details-heading">Phone:</span> +91-1672-253214</p>
-                    <p><span class="details-heading">Email:</span> manojsachan@sliet.ac.in, manojsachan@gmail.com</p>
-                    <p><span class="details-heading">Availability:</span> <span class="available">Available</span></p>
+                    <p>
+                        <span class="details-heading">Email:</span>
+                        manojsachan@sliet.ac.in, manojsachan@gmail.com
+                    </p>
+                    <p>
+                        <span class="details-heading">Availability:</span>
+                        <span class="not-available">Booked</span>
+                    </p>
                 </div>
-                <button class="book-slot" onclick="location.href='book-slot.html'">
+                <button class="book-slot disabled" onclick="location.href='book-slot.html'">
                     <span class="material-icons">schedule</span> Book a Slot
                 </button>
             </div>
             <div class="mentor-card">
-                <img src="assets/STUDENT-DASHBOARD/mentor6.jpg" alt="Mentor Image">
+                <img src="assets/STUDENT-DASHBOARD/mentor6.jpg" alt="Mentor Image" />
                 <div class="mentor-info">
                     <h2>Dr. Gurjinder Kaur</h2>
-                    <p><span class="details-heading">Educational Qualifications:</span> B.E. Kyrgyz Technical University, Bishkek M.S. BITS, Pilani Ph.D SLIET, Longowal</p>
+                    <p>
+                        <span class="details-heading">Educational Qualifications:</span>
+                        B.E. Kyrgyz Technical University, Bishkek M.S. BITS, Pilani Ph.D
+                        SLIET, Longowal
+                    </p>
                     <p><span class="details-heading">Phone:</span> +91-1672-253326</p>
-                    <p><span class="details-heading">Email:</span> gurjinder13@yahoo.com</p>
-                    <p><span class="details-heading">Availability:</span> <span class="available">Available</span></p>
+                    <p>
+                        <span class="details-heading">Email:</span> gurjinder13@yahoo.com
+                    </p>
+                    <p>
+                        <span class="details-heading">Availability:</span>
+                        <span class="available">Available</span>
+                    </p>
                 </div>
                 <button class="book-slot" onclick="location.href='book-slot.html'">
                     <span class="material-icons">schedule</span> Book a Slot
                 </button>
             </div>
         </div>
+        <button class="view-more-btn">View More</button>
     </div>
     <script src="./JS/student-dashboard.js"></script>
 </body>
+
 </html>
+

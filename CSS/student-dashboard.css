@@ -185,6 +185,11 @@ h1 {
   cursor: pointer;
 }
 
+.notification-div{
+  display: flex;
+  flex-direction: row;
+}
+
 .notification:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
@@ -199,6 +204,15 @@ h1 {
 .notification span.material-icons {
   color: #1e88e5;
   margin-right: 10px;
+  transition: color 0.3s ease;
+}
+
+.notification span.material-icons:hover {
+  color: #1565c0;
+}
+
+.notification span.material-icons:active {
+  color: #0d47a1;
 }
 
 .notification p {
@@ -222,6 +236,26 @@ h1 {
 
 .notification .cancel-session:hover {
   background-color: #d32f2f;
+}
+
+.mark-as-seen-button{
+  margin-top: 10px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+}
+
+.mark-as-seen-button:hover {
+  background-color: #2ecc71;
+}
+
+.mark-as-seen-button:active {
+  background-color: #27ae60; /* Darker green when clicked */
 }
 
 .search-box {
@@ -301,6 +335,11 @@ h1 {
   font-size: 14px;
 }
 
+.not-available{
+  color: grey;
+}
+
+
 .book-slot {
   background-color: #1a73e8;
   color: white;
@@ -321,6 +360,17 @@ h1 {
 .book-slot:hover {
   background-color: #135cbc;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.book-slot.disabled {
+  background-color: grey;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.book-slot.disabled:hover {
+  background-color: grey;
+  box-shadow: none;
 }
 
 /* Responsive Styling */
@@ -447,6 +497,30 @@ h1 {
       width: 100%;
       justify-content: center;
   }
+}
+
+.view-more-btn {
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  display: block;
+}
+
+.view-more-btn:hover {
+  background-color: #135cbc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Medium devices (tablets) */
