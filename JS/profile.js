@@ -22,30 +22,23 @@ function viewProfile() {
                                 <br>
                                 <h5>Educational Qualifications</h5>
                                 <ul>
-                                    <li>Ph.D. in Computer Science</li>
-                                    <li>M.Sc. in Software Engineering</li>
+                                    <li>B.E Kyrgyz Techinical University, Bishkek</li>
+                                    <li>M.S. BITS, Pilani</li>
+                                    <li>Ph.D SLIET, Longowal</li>
                                 </ul>
                                 <br>
                                 <h5>Experience</h5>
-                                <p>10 years of teaching experience in various universities.</p>
+                                <p>Joined as Lecturer in August 1997 at SLIET and presently working as Associate Professor.</p>
                                 <br>
                                 <h5>Professional Membership</h5>
-                                <p>Member of ACM and IEEE.</p>
+                                <p>1.Lifetime Member, ISTE.</p>
+                                <p>2.Life Member, IEEE.</p>
                                 <br>
-                                <h5>Publications</h5>
-                                <ul>
-                                    <li>Advanced Algorithms for Data Processing - Journal of Computer Science, 2022</li>
-                                    <li>Machine Learning Applications - International Journal of AI Research, 2021</li>
-                                </ul>
-                                <br>
-                                <h5>Research Projects</h5>
-                                <ul>
-                                    <li>AI in Education - Funded by XYZ Foundation</li>
-                                    <li>Blockchain for Secure Transactions - Collaborated with ABC University</li>
-                                </ul>
+                                 <a href="./edit-profile.html" target="asdfasdf" style="text-decoration: none">
                                 <button class="edit-btn">
-        <i class="material-icons">edit</i>
-    </button>
+                                <i class="material-icons">edit</i>
+                                </button>
+                             </a>
                             </div>
                         </div>
                     </div>`;
