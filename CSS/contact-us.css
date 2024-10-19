@@ -5,7 +5,58 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
+.navbar {
+    background-color: #1e88e5;
+    color: white;
+    padding:0 15px;
+    width: 100%;
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+  }
+  
+  .logo img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .title h1 {
+    font-size: 24px;
+    margin-left: 20px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a:hover {
+    color: #ddd;
+  }
+  .nav-links a i {
+    margin-right: 8px;
+    font-size: 20px;
+  }
+  .nav-logo-jpg{
+    border-radius: 50%;
+  }
 /* Hero Section */
 .hero {
     background-color: #f1f1f1;
@@ -141,3 +192,47 @@ footer {
         padding: 1.5rem;
     }
 }
+/* .navbar{
+    padding: 0 7px;
+  }
+  .title h1{
+    font-size: 15px;
+    display: none;
+  }
+  .logo img {
+    width: 40px;
+    height: auto;
+  }
+  .nav-links{
+    gap: 10px;
+  }
+  .nav-links li a{
+    font-size: 13px;
+  } */
+
+
+     @media (max-width: 575px) {
+       /* Styles for extra small devices */
+     }
+
+     @media (min-width: 576px) and (max-width: 767px) {
+       /* Styles for small devices */
+     }
+     
+
+     @media (min-width: 768px) and (max-width: 991px) {
+       /* Styles for medium devices */
+     }
+     
+
+     @media (min-width: 992px) and (max-width: 1199px) {
+       /* Styles for large devices */
+     }
+     
+  
+
+     @media (min-width: 1200px) {
+       /* Styles for extra large devices */
+     }
+     
+  
