@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f1f1f1;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #666;
+    margin: 1rem 0;
+}
+
+/* Contact Form Section */
+.contact-form-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form elements horizontally */
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 1px; /* Adjusted padding for better vertical alignment */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #f9f9f9; /* Light background for the input fields */
+    transition: border-color 0.3s ease-in-out; /* Smooth focus effect */
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999; /* Subtle placeholder text color */
+    line-height: 1.5; /* Line-height to better center placeholder text vertically */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #6200ea; /* Focus color */
+    background-color: #fff; /* White background on focus */
+}
+
+.form-group textarea {
+    resize: none; /* Prevent resizing */
+}
+
+.submit-button {
+    padding: 1rem 1.5rem;
+    background-color: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px; /* Constrain button width */
+}
+
+.submit-button:hover {
+    background-color: #3700b3;
+}
+
+/* Icon Styles */
+.material-icons {
+    vertical-align: middle;
+    margin-right: 8px; /* Adds some space between the icon and the text */
+    color: blue; /* Match the theme color */
+}
+
+.submit{
+    color:white
+}
+
+/* Adjust the size of the icons */
+.form-group .material-icons {
+    font-size: 20px; /* Adjust size to match text */
+}
+
+.submit-button .material-icons {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #6200ea;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-form-container {
+        width: 90%;
+        padding: 1.5rem;
+    }
+}
