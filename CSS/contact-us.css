@@ -105,6 +105,29 @@ body {
     background-color: #3700b3;
 }
 
+/* Scrollbar Track */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Track color */
+    border-radius: 10px; /* Rounded track corners */
+}
+
+/* Scrollbar Thumb (handle) */
+::-webkit-scrollbar-thumb {
+    background-color: #aac0ec; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 3px solid #f0f0f0; /* Space around the thumb */
+}
+
+/* Scrollbar Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: #8fa8e0; /* Color when hovering */
+}
+
+
 /* Icon Styles */
 .material-icons {
     vertical-align: middle;
