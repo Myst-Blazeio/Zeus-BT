@@ -67,9 +67,9 @@
                 <h2><span class="material-icons">school</span> Student Management</h2>
                 <input type="text" placeholder="Search students..." id="search-student">
                 <ul id="student-list">
-                    <li><span class="material-icons">person</span> Student 1</li>
-                    <li><span class="material-icons">person</span> Student 2</li>
-                    <li><span class="material-icons">person</span> Student 3</li>
+                    <li><span class="material-icons">person</span> Rajveer Singh</li>
+                    <li><span class="material-icons">person</span> Manpreet Singh</li>
+                    <li><span class="material-icons">person</span> Harmanpreet Kaur</li>
                 </ul>
             </div>
 
@@ -77,7 +77,7 @@
                 <h2><span class="material-icons">schedule</span> Upcoming Sessions</h2>
                 <ul id="session-list">
                     <li>
-                        <span class="material-icons">event</span> Session with Student 1 - Oct 20, 2024, 10:00 AM
+                        <span class="material-icons">event</span> Session with Rajveer Singh - Oct 20, 2024, 10:00 AM
                         <div class="gmeet" style="display: flex;">
                             <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link">
                                 <span class="material-icons">videocam</span> Join Google Meet
@@ -87,7 +87,17 @@
                             </button>
                         </div>
                     </li>
-                    <li><span class="material-icons">event</span> Session with Student 2 - Oct 22, 2024, 2:00 PM
+                    <li><span class="material-icons">event</span> Session with Manpreet Singh - Oct 22, 2024, 2:00 PM
+                        <div class="gmeet" style="display: flex;">
+                            <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link">
+                                <span class="material-icons">videocam</span> Join Google Meet
+                            </a>
+                            <button class="cancel-btn ">
+                                <span class="material-icons red">close</span>
+                            </button>
+                        </div>
+                    </li>
+                    <li><span class="material-icons">event</span> Session with Harmanpreet Kaur - Oct 22, 2024, 3:00 PM
                         <div class="gmeet" style="display: flex;">
                             <a href="https://meet.google.com/abc-defg-hij" target="_blank" class="meet-link">
                                 <span class="material-icons">videocam</span> Join Google Meet
@@ -107,16 +117,16 @@
                     Upload Resource
                 </button>
                 <ul id="resource-list">
-                    <li><span class="material-icons">description</span> Resource 1</li>
-                    <li><span class="material-icons">description</span> Resource 2</li>
+                    <li><span class="material-icons">description</span> JavaScript Essentials.pdf</li>
+                    <li><span class="material-icons">description</span> DSA Using Python.pdf</li>
                 </ul>
             </div>
 
             <div class="notifications">
                 <h2><span class="material-icons">notifications</span> Notifications</h2>
                 <ul id="notification-list">
-                    <li><span class="material-icons">message</span> New session request from Student 1</li>
-                    <li><span class="material-icons">alarm</span> Reminder: Session with Student 2 tomorrow</li>
+                    <li><span class="material-icons">message</span> New session request from Jaspreet Kaur</li>
+                    <li><span class="material-icons">alarm</span> Reminder: Session with Rajveer Singh tomorrow</li>
                 </ul>
             </div>
         </main>
@@ -133,9 +143,9 @@
             <div class="message-form">
                 <select id="studentSelect">
                     <option value="">Select option</option>
-                    <option value="Student 1">Student 1</option>
-                    <option value="Student 2">Student 2</option>
-                    <option value="Student 3">Student 3</option>
+                    <option value="Student 1">Rajveer Singh</option>
+                    <option value="Student 2">Manpreet Singh</option>
+                    <option value="Student 3">Harmanpreet Kaur</option>
                     <option value="Global Notice">Global Notice</option>
                 </select>
                 <input type="text" id="messageInput" placeholder="Type your message here..." />
@@ -174,7 +184,7 @@
             </div>
 
             <div class="time-slots">
-                <label><span class="material-icons">schedule</span> Select Time Slots</label>
+                <label><span class="material-icons">schedule</span> Select Unavailable Time Slots</label>
                 <div id="timeSlotsContainer"></div>
             </div>
 
